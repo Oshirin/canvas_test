@@ -10,7 +10,8 @@ HTML5
 
 JavaScript
 
-###Python パッケージ###
+Python パッケージ
+------
 **Pythonでパッケージを新たにインストールする場合、Cのコンパイラが必要になるが、そのとき「MSCVcompiler」というコンパイラが必要になる。**
 
 **このコンパイラはVisualStudio2008のコンパイラでないといけない（自分の環境：Python2.7.8）**
