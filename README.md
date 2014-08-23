@@ -11,4 +11,4 @@ HTML5
 JavaScript
 
 ###Python パッケージ###
-PyAMG(https://github.com/pyamg/pyamg)
+[PyAMG](https://github.com/pyamg/pyamg)
