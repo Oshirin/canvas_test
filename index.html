@@ -8,14 +8,24 @@
 <body>
 <script type="text/javascript" src="jquery.js"></script>
 <script src="sample.js"></script>
+<script src="sa.js"></script>
 
 <canvas id='world'></canvas>
+<canvas id='world2'></canvas>
+<canvas id='world3'></canvas>
+
 
 <br>
-xの座標・・・<input type="text" id=txt1 value=""><br>
-yの座標・・・<input type="text" id=txt2 value=""><br>
-幅の長さ・・・<input type="text" id=txt3 value=""><br>
-縦の長さ・・・<input type="text" id=txt4 value=""><br>
-背景変更・・・<input id="fileSelect" name="image/*" type="file" />
+<form enctype="multipart/form-data" id="Form1" name="Form1" method="POST" action="./cgi-bin/test.py">
+xの座標・・・<input type="text" name="txt1" id="txt1" value="">背景xの座標・・・<input type="text" name="txt11" id="txt11" value=""><br>
+yの座標・・・<input type="text" name="txt2" id="txt2" value="">背景yの座標・・・<input type="text" name="txt22" id="txt22" value=""><br>
+幅の長さ・・・<input type="text" name="txt3" id="txt3" value="">背景幅の長さ・・・<input type="text" name="txt33" id="txt33" value=""><br>
+縦の長さ・・・<input type="text" name="txt4" id="txt4" value="">背景縦の長さ・・・<input type="text" name="txt44" id="txt44" value=""><br>
+背景変更・・・<input id="fileSelect" name="image/*" type="file" /><input type="button" id="rect" value="領域指定"><input type="button" id="mask" value="マスク"><br>
+合成画像・・・<input id="gousei" name="gousei" type="file" /><br>
+<img id="image_png" alt="" style="display:none"/>
+<input type="hidden" name="can" id="can" value=""/>
+<input type="submit" value="送信" name="submit" />
+</form>
 </body>
 </html>
